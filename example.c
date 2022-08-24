@@ -2,10 +2,11 @@
 #include <stdlib.h>
 
 #include "strleni.h"
+#include "limits.h"
 
 int main(int argc, char** argv)
 {
-	int base;
+	int base = 10;
 	if(argc > 1)
 	{
 		if(argc > 2)
@@ -15,6 +16,7 @@ int main(int argc, char** argv)
 		exit(EXIT_SUCCESS);
 	}
 
-	printf("Usage: %s <integer> [base]\n", argv[0]);
+	
+	printf("Usage: %s <integer> [base] - INTEGER_RANGE: %d-%d\n", argv[0], INT_MIN, INT_MAX);
 	exit(EXIT_FAILURE);
 }
