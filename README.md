@@ -1,2 +1,3 @@
 # strleni
-caculate the string length of an integer to string conversion
+
+calculates the string length of an integer to string conversion
