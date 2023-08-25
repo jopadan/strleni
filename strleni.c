@@ -26,14 +26,14 @@ int main(int argc, char** argv)
 				printf("%d:%u\n", x, len);
 				break;
 			default:
-				printf("Usage: %s <integer> [base] - INTEGER_RANGE: %d-%d\n", argv[0], INT_MIN, INT_MAX);
+				printf("Usage: %s <decimal integer> [target base] - INTEGER_RANGE: %d-%d\n", argv[0], INT_MIN, INT_MAX);
 				exit(EXIT_FAILURE);
 				break;
 		}
 		exit(EXIT_SUCCESS);
 	}
 
-	printf("Usage: %s <integer> [base] - INTEGER_RANGE: %d-%d\n", argv[0], INT_MIN, INT_MAX);
+	printf("Usage: %s <deciaml integer> [target base] - INTEGER_RANGE: %d-%d\n", argv[0], INT_MIN, INT_MAX);
 	exit(EXIT_FAILURE);
 
 }
